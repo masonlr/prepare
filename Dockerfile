@@ -9,8 +9,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /injectee
+RUN go build -o /prepare
 
 EXPOSE 8080
 
-CMD [ "/injectee" ]
+CMD [ "/prepare" ]
